@@ -1,0 +1,235 @@
+
+Call:
+C5.0.formula(formula = Churn ~ ., data = train, trails = 200, rules = TRUE)
+
+
+C5.0 [Release 2.07 GPL Edition]  	Thu Aug 23 15:48:29 2018
+-------------------------------
+
+Class specified by attribute `outcome'
+
+Read 4001 cases (14 attributes) from undefined.data
+
+Rules:
+
+Rule 1: (933/19, lift 1.1)
+	international.plan = 1
+	total.day.charge <= 0.4205231
+	number.customer.service.calls <= 0.4285714
+	->  class 1  [0.979]
+
+Rule 2: (2533/60, lift 1.1)
+	international.plan = 1
+	total.day.charge <= 0.6190314
+	total.eve.charge <= 0.87919
+	number.customer.service.calls <= 0.4285714
+	->  class 1  [0.976]
+
+Rule 3: (207/7, lift 1.1)
+	international.plan = 2
+	total.day.charge <= 0.7493293
+	total.intl.calls > 0.1052632
+	total.intl.charge <= 0.6541353
+	number.customer.service.calls <= 0.4285714
+	->  class 1  [0.962]
+
+Rule 4: (129/6, lift 1.1)
+	international.plan = 1
+	total.day.charge > 0.4565728
+	total.day.charge <= 0.5192823
+	total.eve.charge <= 0.5833064
+	total.night.charge > 0.5331739
+	->  class 1  [0.947]
+
+Rule 5: (51/2, lift 1.1)
+	voice.mail.plan = 1
+	total.eve.charge <= 0.2335894
+	->  class 1  [0.943]
+
+Rule 6: (235/14, lift 1.1)
+	total.day.charge > 0.343281
+	total.day.charge <= 0.4565728
+	total.eve.charge > 0.6383048
+	->  class 1  [0.937]
+
+Rule 7: (246/15, lift 1.1)
+	total.day.charge > 0.4565728
+	total.day.charge <= 0.5192823
+	total.eve.charge > 0.5833064
+	->  class 1  [0.935]
+
+Rule 8: (1063/76, lift 1.1)
+	voice.mail.plan = 2
+	->  class 1  [0.928]
+
+Rule 9: (1509/119, lift 1.1)
+	international.plan = 1
+	total.day.charge > 0.5192823
+	total.day.charge <= 0.7493293
+	->  class 1  [0.921]
+
+Rule 10: (914/90, lift 1.0)
+	total.day.charge <= 0.8172368
+	total.eve.charge <= 0.5076815
+	total.night.charge <= 0.5271966
+	->  class 1  [0.901]
+
+Rule 11: (79, lift 7.0)
+	total.day.charge <= 0.4565728
+	total.eve.charge <= 0.6383048
+	total.night.charge <= 0.6240287
+	number.customer.service.calls > 0.4285714
+	->  class 2  [0.988]
+
+Rule 12: (74, lift 7.0)
+	international.plan = 2
+	total.intl.calls <= 0.1052632
+	->  class 2  [0.987]
+
+Rule 13: (71, lift 7.0)
+	total.day.charge <= 0.5192823
+	total.eve.charge <= 0.5833064
+	total.night.charge <= 0.5331739
+	number.customer.service.calls > 0.4285714
+	->  class 2  [0.986]
+
+Rule 14: (67, lift 7.0)
+	voice.mail.plan = 1
+	total.day.charge > 0.707367
+	total.eve.charge > 0.5428664
+	total.night.charge > 0.5146443
+	->  class 2  [0.986]
+
+Rule 15: (65, lift 7.0)
+	voice.mail.plan = 1
+	total.day.charge > 0.7493293
+	total.eve.charge > 0.3481145
+	total.night.charge > 0.5271966
+	->  class 2  [0.985]
+
+Rule 16: (60, lift 7.0)
+	total.day.charge <= 0.4056003
+	total.eve.charge <= 0.6383048
+	number.customer.service.calls > 0.4285714
+	->  class 2  [0.984]
+
+Rule 17: (62, lift 7.0)
+	voice.mail.plan = 1
+	total.day.charge > 0.7895707
+	total.eve.charge > 0.5076815
+	->  class 2  [0.984]
+
+Rule 18: (113/1, lift 6.9)
+	voice.mail.plan = 1
+	total.day.charge > 0.7493293
+	total.eve.charge > 0.5076815
+	total.night.charge > 0.2791393
+	->  class 2  [0.983]
+
+Rule 19: (50, lift 6.9)
+	voice.mail.plan = 1
+	total.day.charge > 0.6260232
+	total.eve.charge > 0.6735684
+	total.night.charge > 0.5104603
+	->  class 2  [0.981]
+
+Rule 20: (41, lift 6.9)
+	total.day.charge <= 0.343281
+	number.customer.service.calls > 0.4285714
+	->  class 2  [0.977]
+
+Rule 21: (63/1, lift 6.9)
+	international.plan = 2
+	total.intl.charge > 0.6541353
+	->  class 2  [0.969]
+
+Rule 22: (28, lift 6.8)
+	total.day.charge <= 0.5538229
+	total.eve.charge <= 0.4099162
+	number.customer.service.calls > 0.4285714
+	->  class 2  [0.967]
+
+Rule 23: (63/2, lift 6.7)
+	voice.mail.plan = 1
+	total.day.charge > 0.6260232
+	total.eve.charge > 0.6735684
+	total.night.charge > 0.4196055
+	total.intl.charge > 0.4092593
+	->  class 2  [0.954]
+
+Rule 24: (35/1, lift 6.7)
+	voice.mail.plan = 1
+	total.day.charge > 0.6190314
+	total.eve.charge > 0.7590782
+	total.night.charge > 0.4196055
+	->  class 2  [0.946]
+
+Rule 25: (70/3, lift 6.7)
+	voice.mail.plan = 1
+	total.day.charge > 0.8172368
+	total.eve.charge > 0.2335894
+	->  class 2  [0.944]
+
+Rule 26: (7, lift 6.3)
+	voice.mail.plan = 2
+	total.eve.charge <= 0.4099162
+	number.customer.service.calls > 0.4285714
+	->  class 2  [0.889]
+
+Rule 27: (105/12, lift 6.2)
+	total.day.charge <= 0.5192823
+	total.eve.charge <= 0.5833064
+	number.customer.service.calls > 0.4285714
+	->  class 2  [0.879]
+
+Rule 28: (4, lift 5.9)
+	international.plan = 2
+	number.customer.service.calls > 0.7142857
+	->  class 2  [0.833]
+
+Rule 29: (6/1, lift 5.3)
+	international.plan = 1
+	total.day.charge > 0.4205231
+	total.day.charge <= 0.6190314
+	total.eve.charge > 0.87919
+	total.night.charge > 0.5236103
+	->  class 2  [0.750]
+
+Rule 30: (11/5, lift 3.8)
+	international.plan = 1
+	total.eve.charge > 0.87919
+	total.night.charge > 0.5236103
+	->  class 2  [0.538]
+
+Default class: 1
+
+
+Evaluation on training data (4001 cases):
+
+	        Rules     
+	  ----------------
+	    No      Errors
+
+	    30  122( 3.0%)   <<
+
+
+	   (a)   (b)    <-classified as
+	  ----  ----
+	  3425    10    (a): class 1
+	   112   454    (b): class 2
+
+
+	Attribute usage:
+
+	 96.20%	total.day.charge
+	 89.60%	international.plan
+	 82.03%	total.eve.charge
+	 72.41%	number.customer.service.calls
+	 33.34%	voice.mail.plan
+	 32.79%	total.night.charge
+	  8.27%	total.intl.charge
+	  7.02%	total.intl.calls
+
+
+Time: 0.1 secs
+
